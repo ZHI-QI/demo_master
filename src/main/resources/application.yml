@@ -1,0 +1,45 @@
+server:
+  port: 1010
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/html/
+  mvc:
+    static-path-pattern: /**
+  redis:
+    host: 106.13.145.254
+    prot: 6379
+    jedis:
+      pool:
+        max-idle: 8
+        min-idle: 0
+        max-active: 8
+        max-wait: -1
+    timeout: 0
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://106.13.145.254:3306/book
+    username: book
+    password: 123456
+    max-idle: 10
+    max-wait: 10000
+    initial-size: 5
+    min-idle: 5
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+permission-config:
+  perms:
+    - url: /cat
+      permission: roles[cat]
+    - url: /dog
+      permission: roles[dog]
+    - url: /sing
+      permission: perms[sing]
+    - url: /jump
+      permission: perms[jump]
+    - url: /rap
+      permission: perms[rap]
+    - url: /basketball
+      permission: perms[basketball]
