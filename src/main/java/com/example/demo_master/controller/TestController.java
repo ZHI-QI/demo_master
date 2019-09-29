@@ -29,15 +29,12 @@ public class TestController {
         Result result = new Result();
 
         Iterable<Title> all = titleRepositoryDao.findAll();
-        /*List users = new ArrayList<Title>();
-
-        users.add(new Title(1L,"文章", "/sys/index"));
-        users.add(new Title(2L,"微语", "/sys/whisper"));
-        users.add(new Title(3L,"留言", "/sys/leacots"));*/
         result.setCode(0);
         result.setMessage("调用成功");
         result.setData(all);
         return result;
     }
+
+
 
 }

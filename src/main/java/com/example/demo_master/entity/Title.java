@@ -15,11 +15,23 @@ public class Title {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
 
+    /**
+     * 标题名称
+     */
     @Column
     private String title_name;
 
+    /**
+     * 标题地址
+     */
     @Column
     private String title_url;
+
+    /**
+     * 标记
+     */
+    @Column
+    private String title_sign;
 
 
 
@@ -31,6 +43,8 @@ public class Title {
         this.title_name = title_name;
         this.title_url = title_url;
     }
+
+
 
     public Long getId() {
         return id;
@@ -56,4 +70,11 @@ public class Title {
         this.title_url = title_url;
     }
 
+    public String getTitle_sign() {
+        return title_sign;
+    }
+
+    public void setTitle_sign(String title_sign) {
+        this.title_sign = title_sign;
+    }
 }

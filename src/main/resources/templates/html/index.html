@@ -28,6 +28,7 @@
     </h1>
 
     <div id="app"></div>
+    <!--标题头展示-->
     <script id="template" type="text/plain">
     <div class="nav">
       {{#each user:key}}
@@ -35,6 +36,7 @@
       {{/each}}
     </div>
     </script>
+
 
     <p class="welcome-text">
       欢迎来到<span class="name">小明</span>的博客~
@@ -106,7 +108,7 @@
     </div>
   </div>
   <script type="text/javascript" src="/res/layui/layui.js"></script>
-  <script type="text/javascript" src="../js/index.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
   <script type="text/javascript">
     layui.config({
       base: '/res/js/util/'
@@ -119,5 +121,7 @@
       menu.init();
     })
   </script>
+
+
 </body>
 </html>

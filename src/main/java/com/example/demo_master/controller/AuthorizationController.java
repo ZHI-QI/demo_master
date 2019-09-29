@@ -4,7 +4,9 @@ import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.apache.shiro.subject.Subject;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -12,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: 2019/9/11 10:34
  * @Description:
  */
-@RestController
+@Controller
 
 public class AuthorizationController {
 
@@ -69,6 +71,41 @@ public class AuthorizationController {
         }
     }
 
+    @GetMapping("/sys/index")
+    public String index(){
+
+        return "index";
+    }
+
+    @GetMapping("/sys/album")
+    public String album(){
+
+        return "album";
+    }
+
+    @GetMapping("/sys/about")
+    public String about(){
+
+        return "about";
+    }
+
+    @GetMapping("/sys/leacots")
+    public String leacots(){
+
+        return "leacots";
+    }
+
+    @GetMapping("/sys/whisper")
+    public String whisper(){
+
+        return "whisper";
+    }
+
+    @GetMapping("/sys/quill")
+    public String quill(){
+
+        return "quill";
+    }
 
 
 }
