@@ -1,7 +1,6 @@
 package com.example.demo_master.dao;
 
 import com.example.demo_master.entity.Title;
-import com.example.demo_master.entity.User;
 import org.springframework.data.repository.CrudRepository;
 
 /**

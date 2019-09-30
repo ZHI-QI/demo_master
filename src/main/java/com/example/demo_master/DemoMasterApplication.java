@@ -1,11 +1,10 @@
 package com.example.demo_master;
 
+import com.example.demo_master.common.util.IdWorker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import util.IdWorker;
 
-import javax.persistence.Basic;
 
 @SpringBootApplication
 public class DemoMasterApplication {

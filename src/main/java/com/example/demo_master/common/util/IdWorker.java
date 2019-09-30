@@ -1,4 +1,4 @@
-package util;
+package com.example.demo_master.common.util;
 
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;

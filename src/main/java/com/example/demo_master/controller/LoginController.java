@@ -37,11 +37,11 @@ public class LoginController {
     /**
      * 错误后的跳转地址
      */
-    private String ERROR_CODE_URL = "login";
+    private String ERROR_CODE_URL = "/login";
     /**
      * 成功后的跳转地址
      */
-    private String SUCCESS_CODE_URL = "index";
+    private String SUCCESS_CODE_URL = "/index";
     /**
      * 验证失败提示
      */

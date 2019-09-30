@@ -60,7 +60,7 @@ public class ShiroConfig {
         filterChainMap.put("/res/js/**","anon");
         filterChainMap.put("/res/layui/**","anon");
         filterChainMap.put("/js/**","anon");
-
+        filterChainMap.put("/sys/index","anon");
         filterChainMap.put("/getCode","anon");
 
 

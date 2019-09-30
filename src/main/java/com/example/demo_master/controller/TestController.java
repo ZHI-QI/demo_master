@@ -2,15 +2,12 @@ package com.example.demo_master.controller;
 
 import com.example.demo_master.common.vo.Result;
 import com.example.demo_master.dao.TitleRepositoryDao;
-import com.example.demo_master.dao.UserRepositoryDao;
 import com.example.demo_master.entity.Title;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @Auther: wangzhiqi

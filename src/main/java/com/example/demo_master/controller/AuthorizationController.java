@@ -5,9 +5,9 @@ import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+
 
 /**
  * @Auther: wangzhiqi
@@ -72,8 +72,8 @@ public class AuthorizationController {
     }
 
     @GetMapping("/sys/index")
-    public String index(){
-
+    public String index(Model model){
+        model.addAttribute("username", "wnaghziqi");
         return "index";
     }
 
@@ -106,6 +106,8 @@ public class AuthorizationController {
 
         return "quill";
     }
+
+
 
 
 }

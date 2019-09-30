@@ -3,6 +3,7 @@ server:
 spring:
   thymeleaf:
     prefix: classpath:/templates/html/
+    cache: false
   mvc:
     static-path-pattern: /**
   redis:
